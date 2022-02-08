@@ -1,0 +1,47 @@
+# Rúbrica Evaluación Laboratorio 5 (CC5312 Seguridad Computacional)
+
+_(Reemplazar los `$$` por sus respuestas)_
+* **Nombres Revisores**:
+	* `$$`
+	* `$$ (Borrar si no aplica)`
+## Video 1
+* **Nombre Video**:
+* **URL**: 
+* **Evaluación por Puntaje**
+	* **Claridad de Explicación**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Lenguaje Utilizado**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Material de Apoyo**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Errores Conceptuales**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Creatividad (Bonificación)**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+* **Comentario General**: `$$`
+
+## Video 2
+* **Nombre Video**:
+* **URL**: 
+* **Evaluación por Puntaje**
+	* **Claridad de Explicación**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Lenguaje Utilizado**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Material de Apoyo**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Errores Conceptuales**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+	* **Creatividad (Bonificación)**:
+		* **Puntaje (de 0 a 6)**: `$$`
+		* **Justificación**: `$$`
+* **Comentario General**: `$$`
