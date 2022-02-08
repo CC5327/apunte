@@ -1,5 +1,5 @@
-# Apunte Taller de Hacking Competitivo
+# Auxiliares Intro a la Seguridad Computacional
 
-Este repositorio contiene el código fuente del apunte del curso CC5325 - Taller de Hacking Competitivo.
+Este repositorio contiene el código fuente del las auxiliares del curso CC5327 - Intro a la Seguridad Computacional
 
-Se puede ver su versión publicada en [este enlace](https://tallerdehacking.dcc.uchile.cl)
+Se puede ver su versión publicada en [este enlace](https://cc5327.dcc.uchile.cl) (soon)
