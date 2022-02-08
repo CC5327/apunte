@@ -45,5 +45,5 @@ alert = true
 alertText = "Cátedras: Martes y Jueves de 10:15 a 11:45 hrs | Auxiliares: Viernes de 10:00 a 12:00 hrs"
 
 # Edit Page
-docsRepo = "https://github.com/cc5325/apunte"
+docsRepo = "https://github.com/cc5327/apunte"
 editPage = true
