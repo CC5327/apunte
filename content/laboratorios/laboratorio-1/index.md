@@ -1,7 +1,7 @@
 ---
 title: "Laboratorio 1: Criptografía"
 date: 2020-04-24T10:00:00-03:00
-draft: false
+draft: true
 weight: 1
 ---
 
