@@ -3,6 +3,7 @@ title: "Reglas de los laboratorios"
 date: 2020-03-18T19:46:47-03:00
 description: Leer primero
 weight: -1
+draft: false
 ---
 
 En esta sección se encuentran los enunciados de los laboratorios del curso. En la barra lateral puede acceder al enunciado de cada uno de ellos. A continuación, se exponen las reglas generales de este tipo de evaluación.
@@ -56,3 +57,6 @@ En cada laboratorio, deberán subir al módulo de Tareas de U-Cursos un archivo 
     - Un párrafo corto resumiendo cómo llegaron a la solución propuesta
     - Respuestas a preguntas explícitas hechas y reflexiones solicitadas en la pregunta de laboratorio
 
+### En la corrección
+
+Si en la corrección quedan dudas sobre las preguntas respondidas. Es posible que pidamos al estudiante una pequeña entrevista antes o después de clases, para darle la oportunidad de explicarnos su respuesta. Usaremos esa entrevista como insumo para definir la nota final.
