@@ -1,7 +1,7 @@
 ---
 title: "Laboratorio 5: Privacidad y Monitoreo"
 date: 2020-07-22T9:00:00-03:00
-draft: false
+draft: true
 weight: 5
 ---
 
