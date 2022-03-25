@@ -121,6 +121,6 @@ Ambos programas reciben de input un string de tamaño arbitrario, el cual intent
 
 Recomendamos que experimenten con distintos inputs y vean qué ocurre con el flujo del programa. Además, tambien es buena idea ejecutar las instrucciones usando GDB para ver el estado del stack.
 
-En el laboratorio 2, vamos a intentar ejecutar _shellcode_ a través del _buffer overflow_ del programa vulnerable.
+En la tarea 2, vamos a intentar ejecutar _shellcode_ a través del _buffer overflow_ del programa vulnerable.
 
-**Actualización: 2 de junio a las 9:30**: Se removió esta sección debido a que el enunciado del laboratorio contendrá los pasos para ejecutar un *buffer_overflow*.
+**Actualización: 2 de junio a las 9:30**: Se removió esta sección debido a que el enunciado de la tarea contendrá los pasos para ejecutar un *buffer_overflow*.

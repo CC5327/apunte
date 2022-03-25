@@ -14,7 +14,7 @@ En esta auxiliar veremos cómo ejecutar algunos ataques sobre aplicaciones web i
 
 Configurar la VPN del CEC es bastante fácil, más aún desde que permiten conectarse usando [OpenVPN](https://openvpn.net).
 
-Sigan el tutorial respectivo para su sistema operativo en [esta página](https://www.cec.uchile.cl/vpn/). Puede usar también la máquina virtual del laboratorio pasado si lo desea.
+Sigan el tutorial respectivo para su sistema operativo en [esta página](https://www.cec.uchile.cl/vpn/). Puede usar también la máquina virtual de la tarea pasada si lo desea.
 
 
 {{< alert icon="👉" >}}
@@ -72,7 +72,7 @@ done
 En caso que no les funcione el método anterior, python3 tiene un módulo para levantar servidores http de forma rápida y simple:
 
 * Crear una carpeta vacía y abrir un terminal dentro de ella. **Esto es importante para evitar exponer archivos de su computador.**
-* Ejecutar `python3 -m http.server 5312`. Esto levantará un servidor HTTP en el puerto 5312 que mostrará los archivos de esa carpeta (es decir, ninguno), pero además logueará en el terminal las consultas realizadas (con sus parámetros GET). La funcionalidad del terminal les sirve tanto para el ejemplo de la auxiliar como para el laboratorio.
+* Ejecutar `python3 -m http.server 5312`. Esto levantará un servidor HTTP en el puerto 5312 que mostrará los archivos de esa carpeta (es decir, ninguno), pero además logueará en el terminal las consultas realizadas (con sus parámetros GET). La funcionalidad del terminal les sirve tanto para el ejemplo de la auxiliar como para el tarea.
 
 En Windows, también pueden intentar con el primer script a través de [WSL](https://docs.microsoft.com/en-us/windows/wsl/install-win10), o usando la máquina virtual.
 

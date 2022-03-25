@@ -1,5 +1,5 @@
 ---
-title: "Laboratorio 1: Criptografía"
+title: "Tarea 1: Criptografía"
 date: 2020-04-24T10:00:00-03:00
 draft: true
 weight: 1
@@ -9,7 +9,7 @@ weight: 1
 
 La siguiente actividad está pensada para su desarrollo en un bloque de auxiliar y un poquito más (~4 horas), en grupos de dos personas como máximo. Sin embargo, se les la posibilidad de entregarla hasta el **próximo lunes 4 de mayo, a las 23:59 hrs, sin descuento por ello**.
 
-Antes de partir este laboratorio, lea la sección de [reglas de laboratorios](../).
+Antes de partir esta tarea, lea la sección de [reglas de las tareas](../).
 
 ## Preguntas
 

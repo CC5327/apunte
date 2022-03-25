@@ -9,8 +9,8 @@
   weight = 25
 
 [[main]]
-  name = "Laboratorios"
-  url = "/laboratorios/"
+  name = "Tareas"
+  url = "/tareas/"
   weight = 27
 
 [[social]]

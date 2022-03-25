@@ -1,5 +1,5 @@
 ---
-title: "Laboratorio 2: Buffer Overflows"
+title: "Tarea 2: Buffer Overflows"
 date: 2020-06-05T9:00:00-03:00
 draft: true
 weight: 2
@@ -9,7 +9,7 @@ weight: 2
 
 La siguiente actividad está pensada para su desarrollo en un bloque de auxiliar y un poco más (~3 horas), en grupos de dos personas como máximo. Sin embargo, se les la posibilidad de entregarla hasta el **próximo viernes 12 de junio, a las 10:00 hrs, sin descuento por ello**.
 
-Al igual que en el laboratorio anterior, antes de partir, recuerden leer la sección de [reglas de laboratorios](reglas).
+Al igual que en el laboratorio anterior, antes de partir, recuerden leer la sección de [reglas de tareas](reglas).
 
 ### Pregunta única: Shellcode
 
