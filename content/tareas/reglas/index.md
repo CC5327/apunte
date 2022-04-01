@@ -10,20 +10,21 @@ Estas reglas aplican para todos las tareas realizadas durante este curso, y es n
 
 ### Grupos
 
-Si bien las entregas son grupales, se les recomienda que ambas personas integrantes del grupo participen de la implementación de la solución y la escritura del "informe".
+Las tareas se deben realizar en grupos de a dos personas.
 
-Para lograr el objetivo de las tareas, requerimos que el trabajo y la discusión la realicen en solamente entre los integrantes de su grupo. En caso de seguir con dudas, recomendamos contactar al equipo docente para recibir más feedback. Luego del término de la evaluación, tendremos espacio en el bloque auxiliar para discutir colectivamente las soluciones.
+Requerimos que el trabajo y la discusión la realicen solamente entre los integrantes de su grupo (no entre otros grupos). En caso de seguir con dudas, recomendamos contactar al equipo docente por Discord o U-Cursos para recibir más feedback.
+
+Luego del término de la evaluación, tendremos espacio en el bloque auxiliar para discutir colectivamente las soluciones si se desea.
 
 ### Material Necesario
 
 Para la resolución de las tareas, en general requerirán de un computador personal con sistema operativo Windows, macOS o Linux. Este computador debe tener instalado `Python 3.8 o superior`. No garantizamos que los ejemplos funcionen con otras versiones de Python 3, y mucho menos con Python 2.
 
-En algunos casos, será necesario que se conecten a la VPN del CEC, utilizando las credenciales de su cuenta FCFM (la de las impresoras del CEC). El tutorial para realizar esta conexión lo pueden encontrar en [la página web del CEC](https://www.cec.uchile.cl/vpn/). Se les avisará con anticipación si esto es necesario para un laboratorio.
+En algunos casos, será necesario que se conecten a la VPN del CEC, utilizando las credenciales de su cuenta FCFM (la de las impresoras del CEC). El tutorial para realizar esta conexión lo pueden encontrar en [la página web del CEC](https://www.cec.uchile.cl/vpn/).
 
 En casos específicos en que requieran un sistema operativo en particular, se les facilitará un archivo de máquina virtual, que podrán ejecutar usando [Oracle VirtualBox](https://www.virtualbox.org/). Se les avisará con anticipación si este es el caso, e intentaremos subir un tutorial sobre cómo correr estas máquinas virtuales cuando corresponda.
 
-Por último, y al igual que en las clases de cátedra, necesitarán una forma de comunicarse entre integrantes del grupo. Para esto, habilitaremos _Breakout Rooms_ en Zoom, pero son libres de usar otras formas de comunicación (Discord, Telegram, WhatsApp, Signal, llamada telefónica, etc.)
-
+Por último, y al igual que en las clases de cátedra, necesitarán una forma de comunicarse entre integrantes del grupo. Podrán hacerlo usando Discord, en alguna de las 15 salas que se habilitarán para ello.
 ### Uso de material externo
 
 Se les recomienda fuertemente el desarrollo de las implementaciones de esta tarea **sin utilizar código de fuentes distintas a las del curso**. Sabemos que muchas de las implementaciones de resolución de estos problemas se encuentran fácilmente en Internet, pero el objetivo de esta evaluación es que puedan desarrollarlas por su cuenta para entenderlas mejor. En caso de tener dudas, recomendamos consultar con el equipo docente. Con respecto a material adicional que no contenga implementaciones ni ha sido citado en el curso (videos explicativos, artículos, etc), en general está permitida su utilización, sin embargo, les recomendamos que nos pregunten directamente en caso que no sepan si el material extra calificaría o no para su uso.
