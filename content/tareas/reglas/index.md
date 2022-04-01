@@ -6,10 +6,6 @@ weight: -1
 draft: false
 ---
 
-En esta sección se encuentran los enunciados de las tareas del curso. En la barra lateral puede acceder al enunciado de cada uno de ellas. A continuación, se exponen las reglas generales de este tipo de evaluación.
-
-## Reglas
-
 Estas reglas aplican para todos las tareas realizadas durante este curso, y es necesario que las lean para poder hacer una correcta entrega de sus soluciones. Como no tenemos forma de fiscalizar gran parte de estas reglas, confiaremos en su honestidad al momento de tomar la evaluación.
 
 ### Grupos
