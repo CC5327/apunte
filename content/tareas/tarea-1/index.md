@@ -7,15 +7,13 @@ weight: 1
 
 ## Instrucciones
 
-La siguiente actividad está pensada para su desarrollo en un bloque de auxiliar y un poquito más (~4 horas), en grupos de dos personas como máximo. Sin embargo, se les la posibilidad de entregarla hasta el **próximo lunes 4 de mayo, a las 23:59 hrs, sin descuento por ello**.
-
-Antes de partir esta tarea, lea la sección de [reglas de las tareas](../).
+Antes de partir esta tarea, lea la sección de [reglas de las tareas](../reglas).
 
 ## Preguntas
 
 ### P1: Criptografía Asimétrica
 
-En [este repositorio](https://github.com/cc5312/lab1-p1) encontrará un cifrador de mensajes usando RSA, con problemas de implementación importantes. Al ejecutar este programa, se crean 2 archivos. Uno de ellos es un mensaje aleatorio de largo variable en texto plano, el otro es el mismo mensaje, pero cifrado con una llave generada por el código.
+En [este repositorio](https://github.com/cc5327/lab1-p1) encontrará un cifrador de mensajes usando RSA, con problemas de implementación importantes. Al ejecutar este programa, se crean 2 archivos. Uno de ellos es un mensaje aleatorio de largo variable en texto plano, el otro es el mismo mensaje, pero cifrado con una llave generada por el código.
 
 Recuerde instalar los requerimientos de librerías usando el comando `pip install -r requirements.txt`. (La librería `criptography` )
 
