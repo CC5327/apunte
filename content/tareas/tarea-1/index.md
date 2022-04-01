@@ -52,7 +52,7 @@ Les recomendamos partir la tarea con el código base de [este repositorio](https
 
 #### Servicios a atacar
 
-Dejamos dos servicios corriendo en la IP `172.17.69.107`. El servicio A (puerto 5312) y el servicio B (puerto 5313). Pueden comunicarse directamente a estos servicios usando el código base proporcionado.
+Dejamos dos servicios **accesibles usando la VPN del CEC** corriendo en la IP `172.17.69.107`. El servicio A (puerto 5312) y el servicio B (puerto 5313). Pueden comunicarse directamente a estos servicios usando el código base proporcionado.
 
 * El servicio en el puerto A recibirá un mensaje de ustedes y les entregará directamente un texto en hexadecimal correspondiente al mensaje cifrado en AES-CBC, el cual contiene su mensaje y una contraseña.
 * El servicio en el puerto B recibirá el texto hexadecimal correspondiente al mensaje cifrado, y les indicará el mensaje que ustedes le entregaron, o un error en caso de fallo.
