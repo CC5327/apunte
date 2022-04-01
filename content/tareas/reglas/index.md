@@ -14,13 +14,9 @@ Estas reglas aplican para todos las tareas realizadas durante este curso, y es n
 
 ### Grupos
 
-Las tareas están pensados para ser resueltas durante las XX horas asignadas. <!-- Sin embargo, el plazo de entrega de esta evaluación generalmente excederá el plazo del bloque de laboratorio. -->
+Si bien las entregas son grupales, se les recomienda que ambas personas integrantes del grupo participen de la implementación de la solución y la escritura del "informe".
 
-Si bien ambos integrantes del grupo deben discutir la solución correcta, se les recomienda también que ambos participen de la implementación de la solución y la escritura del "informe". En forma presencial, ya lo saben cómo hacer. Una forma de hacer esto en forma remota es con la opción de "Compartir Pantalla" y "Control Remoto" de Zoom. 
-
-En caso que interacción del tipo remoto sea necesario entre los integrantes del grupo durante clases de auxiliares o actividades similares, para asignar correctamente los grupos en las salas de conversación de Zoom, les pedimos que cambien su nombre en la plataforma para que inicie con GXX, donde XX simboliza el número de lista de alguno de los dos integrantes, con un cero a la izquierda si es necesario para completar los dos dígitos. Esto nos permitirá crear los _breakout rooms_ de forma eficiente.
-
-Para lograr el objetivo de las tareas, requerimos que el trabajo y la discusión la realicen en solamente entre los integrantes de su grupo solamente. En caso de seguir con dudas, recomendamos contactar al equipo docente para recibir más feedback. Luego del término de la evaluación, tendremos espacio en el bloque auxiliar para discutir colectivamente las soluciones. 
+Para lograr el objetivo de las tareas, requerimos que el trabajo y la discusión la realicen en solamente entre los integrantes de su grupo. En caso de seguir con dudas, recomendamos contactar al equipo docente para recibir más feedback. Luego del término de la evaluación, tendremos espacio en el bloque auxiliar para discutir colectivamente las soluciones.
 
 ### Material Necesario
 
