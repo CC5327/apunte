@@ -1,7 +1,7 @@
 ---
 title: "Auxiliar 4"
 date: 2020-05-21T10:10:32-03:00
-draft: false
+draft: true
 weight: 4
 menu:
   auxiliares:

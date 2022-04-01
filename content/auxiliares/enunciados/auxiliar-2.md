@@ -1,7 +1,7 @@
 ---
 title: "Auxiliar 2"
 date: 2020-03-26T20:12:32-03:00
-draft: false
+draft: true
 weight: 2
 menu:
   auxiliares:
