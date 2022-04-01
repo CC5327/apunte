@@ -24,7 +24,7 @@ En algunos casos, será necesario que se conecten a la VPN del CEC, utilizando l
 
 En casos específicos en que requieran un sistema operativo en particular, se les facilitará un archivo de máquina virtual, que podrán ejecutar usando [Oracle VirtualBox](https://www.virtualbox.org/). Se les avisará con anticipación si este es el caso, e intentaremos subir un tutorial sobre cómo correr estas máquinas virtuales cuando corresponda.
 
-Por último, y al igual que en las clases de cátedra, necesitarán una forma de comunicarse entre integrantes del grupo. Podrán hacerlo usando Discord, en alguna de las 15 salas que se habilitarán para ello.
+Por último, y al igual que en las clases de cátedra, necesitarán una forma de comunicarse entre integrantes del grupo. Si planean resolver la tarea remotamente, les recomendamos usar Discord para encontrarse y contactarse. También podrán usar las salas de voz para hablar con el equipo docente.
 ### Uso de material externo
 
 Se les recomienda fuertemente el desarrollo de las implementaciones de esta tarea **sin utilizar código de fuentes distintas a las del curso**. Sabemos que muchas de las implementaciones de resolución de estos problemas se encuentran fácilmente en Internet, pero el objetivo de esta evaluación es que puedan desarrollarlas por su cuenta para entenderlas mejor. En caso de tener dudas, recomendamos consultar con el equipo docente. Con respecto a material adicional que no contenga implementaciones ni ha sido citado en el curso (videos explicativos, artículos, etc), en general está permitida su utilización, sin embargo, les recomendamos que nos pregunten directamente en caso que no sepan si el material extra calificaría o no para su uso.
