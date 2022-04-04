@@ -46,7 +46,7 @@ x_int = int(x)
 
 En esta pregunta, programaremos un ataque conocido como `Padding Oracle`, el cual consiste en aprovecharse del `padding` que se agrega a mensajes para obtener información del mensaje cifrado, sin necesidad de conocer la llave usada para cifrar.
 
-Le recomendamos revisar el [anexo](../../auxiliares/anexos/padding-oracle.html) para entender mejor cómo llevar a cabo el ataque.
+Le recomendamos revisar el [anexo](../../auxiliares/anexos/padding-oracle) para entender mejor cómo llevar a cabo el ataque.
 
 Les recomendamos partir la tarea con el código base de [este repositorio](https://github.com/cc5327/lab1-p2).
 
