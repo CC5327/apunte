@@ -40,7 +40,7 @@ key = os.urandom(32) # Llave usada por el cifrador de bloque
 iv = os.urandom(16) # Vector de inicialización usado por el modo
 cipher = Cipher(algorithms.AES(key), modes.CBC(iv), backend=backend)
 encryptor = cipher.encryptor() # Contexto de cifrado
-ct = encryptor.update(b"mensaje secreto") # Entrega parte de lo encriptado
+ct = encryptor.update(b"mensaje secreto!") # Entrega parte de lo encriptado
 ct += encryptor.finalize() # Devuelve todo lo encriptado, en caso de haber quedado datos sin devolver anteriormente
 decryptor = cipher.decryptor() # Contexto de descifrado
 print(decryptor.update(ct) + decryptor.finalize()) # devuelve el texto completo descifrado
