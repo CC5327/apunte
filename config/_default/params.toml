@@ -42,7 +42,7 @@ footer = "Sitio generado con <a href=\"https://gohugo.io/\">Hugo</a> y <a href=\
 
 # Alert
 alert = true
-alertText = "Cátedras: Martes y Jueves de 10:15 a 11:45 hrs | Auxiliares: Viernes de 10:00 a 12:00 hrs"
+alertText = "Cátedras: martes y jueves de 14:30 a 16:00 hrs | Auxiliares: viernes de 10:00 a 12:00 hrs"
 
 # Edit Page
 docsRepo = "https://github.com/cc5327/apunte"
