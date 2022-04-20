@@ -33,7 +33,7 @@ Por otro lado, el proceso inverso muestra que para un bloque cifrado \\(C_i\\), 
 
 El _padding_ _PKCS#7_ consiste en agregar entre 1 y \\(BlockSize\\) bytes al final de un mensaje, de tal forma que el valor de todos estos bytes debe ser igual a el número de bytes que le faltan al mensaje para completar el bloque. En caso que el tamaño del mensaje sea múltiplo del tamaño del bloque, se agrega al mensaje un bloque extra en el que todos los bytes tienen valor igual a \\(BlockSize\\).
 
-Por ejemplo, si el mensaje a paddear es `Hola mundo` y el \\(BlockSize\\) es 16, el mensaje con _padding_ es `Hola mundo[0x06][0x06][0x06][0x06][0x06][0x06]` (Los valores entre corchetes representan a un byte con ese valor hexadecimal). Mientras que si el mensaje a paddear es `Mensaje Completo` (largo 16) y el \\(BlockSize\\) es 16 bytes, el mismo mensaje con _padding_ sería `Mensaje Completo[0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10]` (`0x10` es 16 en hexadecimal). Como se observa, este método de padding tiene sentido para bloques de tamaño de hasta 256 bytes.
+Por ejemplo, si el mensaje a paddear es `Hola mundo` y el \\(BlockSize\\) es 16, el mensaje con _padding_ es `Hola mundo[0x06][0x06][0x06][0x06][0x06][0x06]` (Los valores entre corchetes representan a un byte con ese valor hexadecimal). Mientras que si el mensaje a paddear es `Mensaje Completo` (largo 16) y el \\(BlockSize\\) es 16 bytes, el mismo mensaje con _padding_ sería `Mensaje Completo[0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10][0x10]` (`0x10` es 16 en hexadecimal). Como se observa, este método de padding tiene sentido para bloques de tamaño de hasta 256 bytes.
 
 Antes de cifrar un mensaje, se calcula y anexa el padding correspondiente. Luego, es el texto con padding el que se cifra. En el caso del proceso de descifrado, primero se descifra el mensaje usando el procedimiento habitual, y antes de entregarlo descifrado, se revisa su último byte y se remueven tantos bytes como la cantidad indicada por este valor.
 
@@ -73,7 +73,7 @@ Finalmente, para obtener \\(B_n[BlockSize-1]\\). basta con ejecutar el algoritmo
 En resumen, el algoritmo se podría describir de la forma siguiente:
  * Copiar \\(C_{n-1}\\) a una nueva variable llamada \\(M_{n-1}\\). y cambiar \\(M_{n-1}[BlockSize-1]\\) a `[0x00]`.
  * Enviar mensaje cifrado modificado a validar. (Esto es, el mismo mensaje que antes, pero cambiando \\(C_{n-1}\\) por \\(M_{n-1}\\)).
- * Mientras mensaje no valide (\\(D_n[BlockSize] !=\\) `[0x01]`), aumentar \\(M_{n-1}[BlockSize-1]\\) en 1.
+ * Mientras mensaje no valide (\\(D_n[BlockSize-1] !=\\) `[0x01]`), aumentar \\(M_{n-1}[BlockSize-1]\\) en 1.
  * En el momento en que valide, significa que creamos un bloque \\(D_n\\) con padding correcto (casi seguramente su texto plano termina en `[0x01]`, pero podemos asegurarnos de aquello si repetimos el proceso cambiando \\(M_{n-1}[BlockSize-2]\\) por otro valor y la validación sigue pasando. Recuerda devolver el valor del byte luego de cambiarlo).
  * Hacemos \\(\oplus\\) entre el valor \\(M_{n-1}[BlockSize-1]\\) obtenido en el paso pasado y `[0x01]` (El texto plano que adivinamos), lo que nos entregará \\(I_n[BlockSize-1]\\)  
  * Hacemos \\(\oplus\\) entre \\(C_{n-1}[BlockSize-1]\\) y \\(I_n[BlockSize-1]\\). Esto nos entregará \\(B_n[BlockSize-1]\\).
