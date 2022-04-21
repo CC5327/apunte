@@ -11,16 +11,19 @@ CRIME (_Compression Ratio Info-leak Made Easy_) es una vulnerabilidad encontrada
 
 La hipótesis de su existencia fue levantada por Adam Langley, y fue [demostrada](https://docs.google.com/presentation/d/11eBmGiHbYcHR9gL5nDyZChu_-lCa2GizeuOfaLU2HOU) por los investigadores Juliano Rizzo y Thai Duong (los mismos de la vulnerabilidad BREACH).
 
-## Supuestos
+## Contexto del problema
+
+**Supuestos**:
 
 * Atacante puede ver el tráfico en el canal de comunicación.
 * Datos viajan cifrados entre servidor y víctima, pero son comprimidos antes de cifrarse.
 * Atacante puede obligar a víctima a cargar rutas específicas del sitio a atacar.
-* Atacante quiere robarse una cookie u otro valor importante de una consulta HTTPS regular.
 
-En otras palabras, aparte de ver (aunque cifrado) el tráfico entre la víctima y el servidor, el atacante tiene la posibilidad de gatillar consultas arbitrarias al servidor de parte del cliente del cual se quieren exfiltrar las cookies del usuario. 
+En otras palabras, aparte de ver (aunque cifrado) el tráfico entre la víctima y el servidor, el atacante tiene la posibilidad de gatillar consultas arbitrarias al servidor de parte del cliente del cual se quieren exfiltrar las cookies del usuario.
 
 Esto podría realizarse en un sitio con contenido controlado por el atacante (por ejemplo, un blog con imágenes agregadas por el atacante) o con una vulnerabilidad web como _Cross Site Scripting_ (La veremos más adelante en el curso).
+
+**Objetivo**: Atacante quiere robarse una cookie u otro valor importante que viaja en una consulta cifrada al servidor.
 
 ## Compresión + Cifrado
 
