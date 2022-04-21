@@ -30,18 +30,20 @@ Bueno, casi nada. En general podemos conocer más o menos el largo. (Más o meno
 
 Por otro lado, los algoritmos de compresión sin pérdida sí nos permiten obtener algo de información de un dato parcialmente desconocido si éste posee una componente de texto elegida por el atacante. A esto se le suele llamar *Oráculo de Compresión*.
 
-El tamaño del texto comprimido al cifrarse no varía (mucho), por lo que el cifrado no afecta (mucho) al rendimiento del oráculo de compresión.
+No nos meteremos en mucho detalle de cómo funciona GZIP, pero en el pie de este anexo pueden encontrar detalles si desean entenderlo.
 
-## Implementación Genérica 
+El tamaño del texto comprimido al cifrarse no varía (mucho), por lo que el cifrado **no afecta (mucho) al rendimiento de un oráculo de compresión**.
 
-En la implementación genérica, asumimos que hay texto desconocido antes y después del texto que podemos enviar de entrada, y que dentro del texto desconocido, hay tanto una parte conocida (`KNOWN`) como una parte desconocida inmediatamente después de lo conocido (`SECRET`)
+## Implementación 
+
+En esta implementación, asumimos que hay texto desconocido antes y después del texto que podemos enviar de entrada, y que dentro del texto desconocido, hay tanto una parte conocida (`KNOWN`) como una parte desconocida inmediatamente después de lo conocido (`SECRET`)
 
 A continuación mostramos una implementación recursiva y genérica de cómo usar la información entregada por un algoritmo de compresión para detectar el texto comprimido.
 
 
 `Función COMPRESSION_ORACLE(DATA)`
-1. Sean `GZIP(X)` la versión comprimida de un bytearray o string X y `L(X)` la longitud del bytearray o string X.
-1. Devuelve `L(GZIP(UNKNOWN_START + DATA + SECRET_END))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
+1. Sean `GZIP(X)` la versión comprimida de un bytearray o string `X`, `ENCRYPT(X)` la versión comprimida (AES-CBC con Key e IV definidos pero no explícitos) de un bytearray o string `X` y `L(X)` la longitud del bytearray o string `X`.
+1. Devuelve `L(ENCRYPT(GZIP(UNKNOWN_START + DATA + SECRET_END)))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
 
 `Función ALGORITHM(KNOWN)`
 1. Sean `W` el alfabeto de posibles caracteres en el secreto que queremos encontrar y `KNOWN` una pequeña parte conocida del texto que no controlamos que es adyacente al secreto que queremos encontrar.
@@ -59,6 +61,8 @@ A continuación mostramos una implementación recursiva y genérica de cómo usa
 `RESPONSES` contendrá todas las posibles soluciones para `SECRET` justo después de `KNOWN`
 
 Notar que para que el algoritmo pueda partir adecuadamente, la primera invocación de `ALGORITHM` debe no ser vacía (y ojalá lo más larga posible).
+
+**¿Para qué definimos `NO_W`?** Para evitar que haya más compresión de la que esperamos. Dado que son caracteres no encontrados en `W`, estos no serán comprimidos de formas que no podamos predecir.
 
 
 ## Cifradores de Bloque y compresión
@@ -83,9 +87,10 @@ Entonces, lo que haremos es agregar antes de `KNOWN` (el texto inicial conocido)
 
 Luego, redefinir `KNOWN` como `BASURA + KNOWN` y usar el algoritmo original.
 
-## Enlaces
+## Referencias y más información:
 
-* [DEFLATE](), el algoritmo de compresión usado en GZIP, usa una combinazión de LZ77 y Codificación de Huffman
+* [DEFLATE](https://zlib.net/feldspar.html), el algoritmo de compresión usado en GZIP, usa una combinazión de LZ77 y Codificación de Huffman
 * [LZ77](https://archive.ph/20130107232302/http://oldwww.rasip.fer.hr/research/compress/algorithms/fund/lz/lz77.html)
 * [Huffman Coding](https://courses.cs.washington.edu/courses/cse143/10su/lectures/8-13/22-huffman.pdf)
 * [CRIME-poc](https://github.com/mpgn/CRIME-poc/blob/master/CRIME-cbc-poc.py): Implementación en Python. Muy parecida a lo que se busca en la tarea 2 y base de esta explicación.
+* [Respuesta en StackOverflow](https://security.stackexchange.com/questions/19911/crime-how-to-beat-the-beast-successor) dada por alguien que no conocía la vulnerabilidad (todavía no eran públicos sus detalles), pero adivina sorprendentemente de qué trata. Es una muy buena explicación! pero en inglés.
