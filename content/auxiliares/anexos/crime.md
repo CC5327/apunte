@@ -13,13 +13,14 @@ La hipótesis de su existencia fue levantada por Adam Langley, y fue [demostrada
 
 ## Supuestos
 
-* Atacante tiene control del canal de comunicación.
+* Atacante puede ver el tráfico en el canal de comunicación.
+* Datos viajan cifrados entre servidor y víctima, pero son comprimidos antes de cifrarse.
 * Atacante puede obligar a víctima a cargar rutas específicas del sitio a atacar.
-* Atacante quiere robarse una cookie de una consulta HTTP regular.
+* Atacante quiere robarse una cookie u otro valor importante de una consulta HTTPS regular.
 
-La consulta HTTP se verá como así:
+En otras palabras, aparte de ver (aunque cifrado) el tráfico entre la víctima y el servidor, el atacante tiene la posibilidad de gatillar consultas arbitrarias al servidor de parte del cliente del cual se quieren exfiltrar las cookies del usuario. 
 
-
+Esto podría realizarse en un sitio con contenido controlado por el atacante (por ejemplo, un blog con imágenes agregadas por el atacante) o con una vulnerabilidad web como _Cross Site Scripting_ (La veremos más adelante en el curso).
 
 ## Compresión + Cifrado
 
@@ -28,6 +29,8 @@ La gracia de cifrar datos es que no podemos saber nada de lo que éstos represen
 Bueno, casi nada. En general podemos conocer más o menos el largo. (Más o menos porque el texto suele tener padding en algunos modos de cifrado)
 
 Por otro lado, los algoritmos de compresión sin pérdida sí nos permiten obtener algo de información de un dato parcialmente desconocido si éste posee una componente de texto elegida por el atacante. A esto se le suele llamar *Oráculo de Compresión*.
+
+El tamaño del texto comprimido al cifrarse no varía (mucho), por lo que el cifrado no afecta (mucho) al rendimiento del oráculo de compresión.
 
 ## Implementación Genérica 
 
