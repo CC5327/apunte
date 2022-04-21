@@ -46,7 +46,7 @@ A continuación mostramos una implementación recursiva y genérica de cómo usa
 
 `Función COMPRESSION_ORACLE(DATA)`
 1. Sean `GZIP(X)` la versión comprimida de un bytearray o string `X`, `ENCRYPT(X)` la versión comprimida (AES-CBC con Key e IV definidos pero no explícitos) de un bytearray o string `X` y `L(X)` la longitud del bytearray o string `X`.
-1. Devuelve `L(ENCRYPT(GZIP(UNKNOWN_START + DATA + SECRET_END)))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
+1. Devuelve `L(ENCRYPT(GZIP(UNKNOWN_START + DATA + UNKNOWN_END)))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
 
 `Función ALGORITHM(KNOWN)`
 1. Sean `W` el alfabeto de posibles caracteres en el secreto que queremos encontrar y `KNOWN` una pequeña parte conocida del texto que no controlamos que es adyacente al secreto que queremos encontrar.
