@@ -1,7 +1,7 @@
 ---
 title: "Tarea 2: Cripto Aplicaciones"
 date: 2020-06-05T9:00:00-03:00
-draft: true
+draft: false
 weight: 2
 ---
 {{< alert icon="👉" >}}
