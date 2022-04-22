@@ -46,7 +46,7 @@ A continuación mostramos una implementación recursiva y genérica de cómo usa
 
 `Función COMPRESSION_ORACLE(DATA)`
 1. Dado un bytearray o string `X`, tenemos como `GZIP(X)` la versión comprimida de `X`, como `L(X)` la longitud de `X` y como `ENCRYPT(X)` la versión comprimida (AES-CBC con Key e IV definidos pero no explícitos) de `X`.
-2. Retorna `L(ENCRYPT(GZIP(UNKNOWN_START + DATA + UNKNOWN_END)))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
+1. Retorna `L(ENCRYPT(GZIP(UNKNOWN_START + DATA + UNKNOWN_END)))`, donde `UNKNOWN_START` y `UNKNOWN_END` son valores desconocidos.
 
 `Función ALGORITHM(KNOWN)`
 1. Sean `W` el alfabeto de posibles caracteres en el secreto que queremos encontrar y `KNOWN` una pequeña parte conocida del texto, que no controlamos y que es adyacente al secreto que queremos encontrar.
@@ -54,9 +54,9 @@ A continuación mostramos una implementación recursiva y genérica de cómo usa
 1. Definimos `UNCOMPRESSED_LENGTH` como `L(COMPRESS_ORACLE(KNOWN + y))`, con `y` un conjunto de varios (¿5 a 10?) caracteres fuera de `W`
 1. Definimos `NO_W` como un conjunto de entre 5 y 10 caracteres no pertenecientes a `W`.
 1. Para cada caracter `c` en `W`:
-  1. Definimos `BASE_LENGTH = COMPRESS_ORACLE(KNOWN + NO_W + c)`
-  1. Definimos `C_LENGTH = COMPRESS_ORACLE(KNOWN + c + NO_W)`
-  1. Si `C_LENGTH < BASE_LENGTH`, agregamos `c` a la lista `POSSIBLE`.
+    1. Definimos `BASE_LENGTH = COMPRESS_ORACLE(KNOWN + NO_W + c)`
+    1. Definimos `C_LENGTH = COMPRESS_ORACLE(KNOWN + c + NO_W)`
+    1. Si `C_LENGTH < BASE_LENGTH`, agregamos `c` a la lista `POSSIBLE`.
 1. Definimos `RESPONSES` como una lista vacía
 1. Si `POSSIBLE` no está vacío, para cada caracter `p` en `POSSIBLE`, `RESPONSES += ALGORITHM(KNOWN + C)`
 1. Devolver `RESPONSES`
@@ -83,9 +83,9 @@ Entonces, lo que haremos es agregar antes de `KNOWN` (el texto inicial conocido)
 1. Definir `NEW_LENGTH = BASE_LENGTH`
 1. Definir `BASURA = ''` (String vacío)
 1. Mientras `NEW_LENGTH == BASE_LENGTH`:
-  a. Redefinir `NEW_LENGTH = COMPRESS_ORACLE(BASURA + KNOWN)`
-  b. Si `NEW_LENGTH <= BASE_LENGTH`:
-    1. Redefinir `BASURA += RANDOM(W)`, donde `RANDOM(Z)` obtiene un caracter aleatorio del alfabeto `Z`
+    1. Redefinir `NEW_LENGTH = COMPRESS_ORACLE(BASURA + KNOWN)`
+    1. Si `NEW_LENGTH <= BASE_LENGTH`:
+        1. Redefinir `BASURA += RANDOM(W)`, donde `RANDOM(Z)` obtiene un caracter aleatorio del alfabeto `Z`
 1. Devolver `BASURA[:-1]`, es decir, `BASURA` sin su último caracter (que es el texto cuyo largo el el máximo posible en el que el largo no aumenta)
 
 Luego, redefinir `KNOWN` como `BASURA + KNOWN` y usar el algoritmo original.
