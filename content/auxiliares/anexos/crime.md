@@ -83,8 +83,8 @@ Entonces, lo que haremos es agregar antes de `KNOWN` (el texto inicial conocido)
 1. Definir `NEW_LENGTH = BASE_LENGTH`
 1. Definir `BASURA = ''` (String vacío)
 1. Mientras `NEW_LENGTH == BASE_LENGTH`:
-  1. Redefinir `NEW_LENGTH = COMPRESS_ORACLE(BASURA + KNOWN)`
-  1. Si `NEW_LENGTH <= BASE_LENGTH`:
+  a. Redefinir `NEW_LENGTH = COMPRESS_ORACLE(BASURA + KNOWN)`
+  b. Si `NEW_LENGTH <= BASE_LENGTH`:
     1. Redefinir `BASURA += RANDOM(W)`, donde `RANDOM(Z)` obtiene un caracter aleatorio del alfabeto `Z`
 1. Devolver `BASURA[:-1]`, es decir, `BASURA` sin su último caracter (que es el texto cuyo largo el el máximo posible en el que el largo no aumenta)
 
@@ -92,6 +92,6 @@ Luego, redefinir `KNOWN` como `BASURA + KNOWN` y usar el algoritmo original.
 
 ## Referencias y más información
 
-* [DEFLATE](https://zlib.net/feldspar.html), el algoritmo de compresión usado en GZIP, usa una combinazión de [LZ77](https://archive.ph/20130107232302/http://oldwww.rasip.fer.hr/research/compress/algorithms/fund/lz/lz77.html) y [Huffman Coding](https://courses.cs.washington.edu/courses/cse143/10su/lectures/8-13/22-huffman.pdf)
+* [DEFLATE](https://zlib.net/feldspar.html), el algoritmo de compresión usado en GZIP, usa una combinación de [LZ77](https://archive.ph/20130107232302/http://oldwww.rasip.fer.hr/research/compress/algorithms/fund/lz/lz77.html) y [Huffman Coding](https://courses.cs.washington.edu/courses/cse143/10su/lectures/8-13/22-huffman.pdf)
 * [CRIME-poc](https://github.com/mpgn/CRIME-poc/blob/master/CRIME-cbc-poc.py): Implementación en Python. Muy parecida a lo que se busca en la tarea 2 y usada como base de esta explicación.
 * [Respuesta en StackOverflow](https://security.stackexchange.com/questions/19911/crime-how-to-beat-the-beast-successor) dada por alguien que no conocía la vulnerabilidad (todavía no eran públicos sus detalles), pero adivina sorprendentemente de qué trata. Es una muy buena explicación! pero en inglés.
