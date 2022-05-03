@@ -45,7 +45,7 @@ Adjunte un "README.txt" que explique cómo ejecutar el programa.
 
 Deberán crear un programa en Python que se conecte a una IP definida como argumento o configuración y al puerto 5327/TCP. El programa debe ejecutar el ataque CRIME definido en el anexo enlazado al inicio de esta página.
 
-El programa servidor deberá registrar las acciones realizadas mediante un log, de tal forma que se muestre en cada linea:
+El programa cliente deberá registrar las acciones realizadas mediante un log, de tal forma que se muestre en cada linea:
     * Fecha del log
     * Texto en request enviada
     * Largo de texto en request

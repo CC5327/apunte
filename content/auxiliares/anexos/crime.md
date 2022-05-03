@@ -51,11 +51,10 @@ A continuación mostramos una implementación recursiva y genérica de cómo usa
 `Función ALGORITHM(KNOWN)`
 1. Sean `W` el alfabeto de posibles caracteres en el secreto que queremos encontrar y `KNOWN` una pequeña parte conocida del texto, que no controlamos y que es adyacente al secreto que queremos encontrar.
 1. Definimos `POSSIBLE` como un arreglo vacío con todas las respuestas posibles.
-1. Definimos `UNCOMPRESSED_LENGTH` como `L(COMPRESS_ORACLE(KNOWN + y))`, con `y` un conjunto de varios (¿5 a 10?) caracteres fuera de `W`
 1. Definimos `NO_W` como un conjunto de entre 5 y 10 caracteres no pertenecientes a `W`.
 1. Para cada caracter `c` en `W`:
-    1. Definimos `BASE_LENGTH = COMPRESS_ORACLE(KNOWN + NO_W + c)`
-    1. Definimos `C_LENGTH = COMPRESS_ORACLE(KNOWN + c + NO_W)`
+    1. Definimos `BASE_LENGTH = COMPRESSION_ORACLE(KNOWN + NO_W + c)`
+    1. Definimos `C_LENGTH = COMPRESSION_ORACLE(KNOWN + c + NO_W)`
     1. Si `C_LENGTH < BASE_LENGTH`, agregamos `c` a la lista `POSSIBLE`.
 1. Definimos `RESPONSES` como una lista vacía
 1. Si `POSSIBLE` no está vacío, para cada caracter `p` en `POSSIBLE`, `RESPONSES += ALGORITHM(KNOWN + C)`
