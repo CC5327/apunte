@@ -31,7 +31,7 @@ Si el error lanzado es de virtualización, necesitan activar la "Virtualización
 {{< /alert >}}
 
 
-Tanto el usuario como la contraseña de la máquina son el código del curso, en minúsculas.
+Tanto el usuario como la contraseña de la máquina son `cc5312`, en minúsculas.
 
 
 ## Configuración actual de la máquina virtual
