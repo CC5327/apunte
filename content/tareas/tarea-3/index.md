@@ -1,7 +1,7 @@
 ---
 title: "Tarea 3: Buffer Overflows"
 date: 2020-06-05T9:00:00-03:00
-draft: true
+draft: false
 weight: 2
 ---
 
@@ -77,6 +77,21 @@ Agregue el shellcode inmediatamente a continuación del NOP slide **pero dejando
 
 Finalmente, ejecute el programa y compruebe que el shellcode se ejecuta, levantándose un terminal al correr el programa con el input alterado. Para probar el buen funcionamiento del terminal, ejecute algunos comandos en él (ejemplo: `whoami`, `echo "hola"`, `ls`). Agregue una captura del shellcode ejecutado y el terminal funcionando y adjunte el texto de entrada completo (con NOP slide, shellcode, relleno y dirección de retorno) que generó.
 
+
+#### Pregunta Extra 1: repetir el experimento, pero sin ayuda de GDB (hasta 0.5 puntos extra para cualquier quiz, se puede entregar de forma individual o grupal)
+
+Probablemente, si ejecutan el payload sin GDB, éste no funcione. La razón de esto es que las variables de ambiente cargadas con GDB y sin GDB son distintas, y éstas ocupan un espacio en la memoria del proceso que hace que cambien ligeramente las direcciones de memoria de la pila. En el anexo de GDB hay un enlace a Stack Overflow explicando mejor estas razones y cómo solucionar el problema.
+
+Para obtener esta bonificación, es necesario que expliquen detalladamente un método para poder encontrar las direcciones de memoria correctas al ejecutar el programa con un payload sin GDB, además de por qué funcionaría (no es necesario que sea la más eficiente). Para la evaluación, deben adjuntar los pasos a seguir para replicar su método y una captura de pantalla que muestre que su método funciona. La respuesta no puede usar el script del enlace de Stack Overflow del anexo de GDB (aunque si la citan pueden entregar una explicación basada en ella).
+
+
+#### Pregunta Extra 2: Usar otros shellcode (hasta 0.5 puntos extra para cualquier quiz, se puede entregar de forma individual o grupal)
+
+Busque otros shellcode para Linux x86/64 que le interesen e intente agregarlos como payload a su ataque. Para completar este objetivo, debe adjuntar el enlace a la fuente del shellcode usado, el texto de entrada completo y la captura del shellcode ejecutándose.
+
+#### Pregunta Extra 3: Crear su propio shellcode (hasta 1 punto extra para cualquier quiz, se puede entregar solamente de forma individual)
+
+Explique detalladamente cómo crear shellcode para Linux x86_64 y entregue un `shellcode` creado por usted siguiendo ese método (no tiene que ser necesariamente complejo, basta con que ejecuten código no presente en el programa original). Puede usar librerías y programas externos existentes siempre y cuando los cite y explique en qué aporta cada uno de ellos. Para completar este objetivo, debe adjuntar la descripción de cómo hacerlo, el shellcode junto con una descripción de qué hace, el comando completo y una captura del shellcode funcionando.
 
 ### Créditos y más información
 
