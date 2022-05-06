@@ -1,7 +1,7 @@
 ---
 title: "Auxiliar 4"
 date: 2020-05-21T10:10:32-03:00
-draft: true
+draft: false
 weight: 4
 menu:
   auxiliares:
@@ -123,4 +123,4 @@ Recomendamos que experimenten con distintos inputs y vean qué ocurre con el flu
 
 En la tarea 2, vamos a intentar ejecutar _shellcode_ a través del _buffer overflow_ del programa vulnerable.
 
-**Actualización: 2 de junio a las 9:30**: Se removió esta sección debido a que el enunciado de la tarea contendrá los pasos para ejecutar un *buffer_overflow*.
+
