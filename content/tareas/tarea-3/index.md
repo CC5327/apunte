@@ -23,7 +23,7 @@ Si tienen problemas ejecutando `buffer_overflow`, deben activar el permiso de ej
 sudo chmod +x buffer_overflow
 ```
 
-Las credenciales de la máquina las pueden encontrar en la [auxiliar 4](../../auxiliares/auxiliar-4).
+Las credenciales de la máquina las pueden encontrar en la [auxiliar 4](../../auxiliares/enunciados/auxiliar-4).
 
 {{< /alert >}}
 
