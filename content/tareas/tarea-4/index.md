@@ -1,7 +1,7 @@
 ---
-title: "Tarea 4"
+title: "Tarea 4: Seguridad Web"
 date: 2020-06-10T9:00:00-03:00
-draft: true
+draft: false
 weight: 3
 ---
 
