@@ -1,7 +1,7 @@
 ---
 title: "Auxiliar 5"
 date: 2020-06-10T10:10:32-03:00
-draft: true
+draft: false
 weight: 5
 menu:
   auxiliares:
@@ -46,7 +46,7 @@ Los ejemplos se ejecutarán utilizando Firefox, sin embargo, potencialmente todo
 
 Partiremos revisando una versión insegura de U-Cursos, la cual denominaremos E-Cursos.
 
-Pueden entrar a ella en la siguiente URL, solo visible desde la VPN: http://ecursos.cc5312.xor.cl. Probablemente recibirán un mensaje de advertencia por certificado autofirmado. Como la página es interna, no es posible conseguir certificados TLS gratuitos a través de Let's Encrypt, por lo que deberemos conformarnos con esto. Agregue el certificado a la lista de certificados confiables ().
+Pueden entrar a ella en la siguiente URL, solo visible desde la VPN: http://ecursos.cc5312.xor.cl. Probablemente recibirán un mensaje de advertencia por certificado autofirmado. Como la página es interna, no es posible conseguir certificados TLS gratuitos a través de Let's Encrypt, por lo que deberemos conformarnos con esto. 
 
 Al contrario de U-Cursos, E-Cursos no revisa potenciales entradas maliciosas en las publicaciones de Novedades. Un usuario de malas intenciones con permisos para sbir de novedades acaba de publicar una noticia. Sin embargo, la publicación contiene un script que extrae información de los usuarios que visitan la página. Revisaremos en detalle el script durante la auxiliar.
 
