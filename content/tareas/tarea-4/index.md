@@ -7,13 +7,13 @@ weight: 3
 
 ## Instrucciones
 
-La siguiente actividad está pensada para su desarrollo en un bloque de auxiliar y un poco más (~3 horas), en grupos de dos personas como máximo. El plazo de entrega es hasta el **viernes 17 de junio, a las 23:59 hrs**. Antes de partir, recuerden leer la sección de [reglas de tareas](../reglas/).
+La siguiente actividad está pensada para su desarrollo en un bloque de auxiliar y un poco más (~3 horas), en grupos de dos personas como máximo. El plazo de entrega es hasta el **miércoles 22 de junio, a las 23:59 hrs**. Antes de partir, recuerden leer la sección de [reglas de tareas](../reglas/).
 
 ### Pregunta única: Capture the flag
 
-Esta tarea está inspirada en los eventos de _Capture the Flag_ realizados por comunidades de hacking desde hace mucho tiempo. Si luego del laboratorio encuentran que les interesan este tipo de desafíos, les recomendamos partir por [este enlace](https://securityeducationresourcecollection.net/) (categoría: CTF) para buscar otros ejercicios similares y disponibles en Internet.
+Esta tarea está inspirada en los eventos de _Capture the Flag_ realizados por comunidades de hacking desde hace mucho tiempo. Si luego de la tarea encuentran que les interesan este tipo de desafíos, les recomendamos partir por [este enlace](https://securityeducationresourcecollection.net/) (categoría: CTF) para buscar otros ejercicios similares y disponibles en Internet.
 
-El objetivo de esta actividad es encontrar un valor secreto (Flag) escondido en la misma base de datos de la aplicación web entregada. La URL sobre la que debe trabajar cada grupo será enviada de forma directa, y es "secreta" (nadie aparte de ustedes y el equipo docente debería poder acceder al sitio de forma directa). Lo anterior es para evitar que externos no autorizados por ustedes interactúen con su instancia.
+El objetivo de esta actividad es encontrar un valor secreto (Flag) escondido en la misma base de datos de la aplicación web entregada. La URL sobre la que debe trabajar cada grupo será enviada de forma directa, y es "secreta" (nadie aparte de ustedes y el equipo docente debería poder acceder al sitio de forma directa). Lo anterior es para evitar que externos no autorizados por ustedes interactúen con su instancia. Para poder acceder a su contenido deben **conectarse a través de la VPN del CEC**.
 
 #### Primera parte: XSS (3 puntos)
 
