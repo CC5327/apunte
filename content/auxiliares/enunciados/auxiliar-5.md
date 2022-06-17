@@ -121,6 +121,6 @@ sudo openvpn --config CEC-fcfm.ovpn
 
 ## Miniejercicios recomendados para antes del laboratorio
 
-* Desarrollen un script en Python que realice esta acción de forma automática. Para ello, le recomendamos usar la librería [requests](https://2.python-requests.org/en/master/). La URL de consulta debe ser la misma que la definida en el `action` del form vulnerable, y se debe usar el verbo `POST` (para más información sobre cómo mandar requests POST, revisar [esta parte de la documentación](https://2.python-requests.org/en/master/user/quickstart/#more-complicated-post-requests)).
+* Desarrollen un script en Python que realice esta acción de forma automática. Para ello, le recomendamos usar la librería [requests](https://requests.readthedocs.io/en/latest/). La URL de consulta debe ser la misma que la definida en el `action` del form vulnerable, y se debe usar el verbo `POST` (para más información sobre cómo mandar requests POST, revisar [esta parte de la documentación](https://requests.readthedocs.io/en/latest/user/quickstart/#more-complicated-post-requests)).
 
 * Prueben consiguiendo más información de la base de datos entregada: Use [esta referencia](http://pentestmonkey.net/cheat-sheet/sql-injection/postgres-sql-injection-cheat-sheet) para conseguir ideas. No se preocupen si rompen algo, pero avísenme para restaurarlo.
