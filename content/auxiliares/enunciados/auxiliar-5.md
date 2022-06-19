@@ -79,6 +79,8 @@ En Windows, también pueden intentar con el primer script a través de [WSL](htt
 
 A cada consulta realizada, este pequeño servidor contestará un JSON pequeño, además de setear la cabecera de la consulta de forma que no sea rechazada por CORS de parte del navegador. Es importante comentar que este código requiere tener instalada la versión BSD de Netcat.
 
+Por último, es posible levantar un servidor registrandose en la página [Pipedream](https://pipedream.com/requestbin), más detalles se verán en la auxliar.
+
 ### Modificación local del DOM
 
 Para poder probar el script ustedes mismos, es necesario que el valor del campo `hidden` en el que está la IP de destino de las cookies y contraseña sea igual a la IP de sus computadores, de tal modo que las consultas del script inyectado viajen a nuestros equipos. Si bien no pueden cambiar ese valor en el servidor, pueden modificar el DOM de la página web local de forma bastante simple. En el video de la clase se mostrará en detalle como usar el inspector de DOM del navegador y como hacer esta modificación.
